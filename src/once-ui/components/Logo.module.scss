@@ -1,9 +1,14 @@
 .type {
-	content: var(--type);
+    display: flex;
+    align-items: center;
+    font-family: 'Your Font Family', sans-serif; // Replace with your desired font
+    color: #0016d9;
 }
 
 .icon {
-	content: var(--icon);
+	content: var(--type);
+    background: url('../../app/kc.png') no-repeat center center;
+    background-size: contain;
 }
 
 .type, .icon {

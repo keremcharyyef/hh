@@ -34,26 +34,33 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
     useEffect(() => {
         if (!icon && !wordmark) {
-            console.warn("Both 'icon' and 'showType' props are set to false. The logo will not render any content.");
+            console.warn("Both 'icon' and 'wordmark' props are set to false. The logo will not render any content.");
         }
     }, [icon, wordmark]);
 
     return (
         <Link
             className={classNames('radius-l', 'flex', className)}
-            style={{height: 'fit-content', ...style}}
+            style={{ height: 'fit-content', ...style }}
             href={href}
             aria-label="Trademark"
-            {...props}>
+            {...props}
+        >
             {icon && (
                 <div
                     style={{ height: `var(--static-space-${sizeMap[size]})` }}
-                    className={styles.icon}/>
+                    className={styles.icon}
+                />
             )}
             {wordmark && (
                 <div
-                    style={{ height: `var(--static-space-${sizeMap[size]})` }}
-                    className={styles.type}/>
+                    style={{ height: `var(--static-space-${sizeMap[size]})`, display: 'flex', alignItems: 'center' }}
+                    className={styles.type}
+                >
+                    <span style={{ fontSize: `var(--static-space-${sizeMap[size]})`, fontWeight: 'bold' }}>
+                        KC
+                    </span>
+                </div>
             )}
         </Link>
     );

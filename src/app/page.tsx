@@ -8,14 +8,14 @@ import Link from 'next/link';
 export default function Home() {
 	const links = [
 		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
+			href: "https://100haryt.com",
+			title: "Project",
+			description: "I'm backend developer",
 		},
 		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
+			href: "https://216.250.12.213",
+			title: "Bazarexpress",
+			description: "It's my project",
 		},
 		{
 			href: "https://once-ui.com/docs/typography",
@@ -57,7 +57,7 @@ export default function Home() {
 									width: 'fit-content',
 									padding: 'var(--static-space-8) var(--static-space-16)',
 									backdropFilter: 'blur(var(--static-space-1))'}}>
-								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
+								Kerem <span className="brand-on-background-medium">Charyyev</span>
 							</InlineCode>
 							<Heading
 								wrap="balance"
@@ -65,15 +65,15 @@ export default function Home() {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Helping designers code and developers design
+										Backend developer with 2 years of experience.
 									</LetterFx>
 								</span>
 							</Heading>
 							<Button
-								href="https://once-ui.com/docs"
+								href="https://github.com/charyyef"
 								suffixIcon="chevronRight"
 								variant="secondary">
-								Read docs
+								Github
 							</Button>
 						</Flex>
 					</Flex>
@@ -86,29 +86,29 @@ export default function Home() {
 						mobileColumns="1col"
 						fillWidth>
 						{links.map((link) => (
+							<Flex fillWidth paddingY="8" gap="8" direction="column">
+							{/* Existing Link component */}
 							<Link
 								target="_blank"
 								style={{ padding: 'var(--responsive-space-l)' }}
 								key={link.href}
-								href={link.href}>
-								<Flex
-									fillWidth paddingY="8" gap="8"
-									direction="column">
-									<Flex
-										fillWidth gap="12"
-										alignItems="center">
-										<Text
-											variant="body-strong-m" onBackground="neutral-strong">
+								href={link.href}
+							>
+								<Flex fillWidth paddingY="8" gap="8" direction="column">
+									<Flex fillWidth gap="12" alignItems="center">
+										<Text variant="body-strong-m" onBackground="neutral-strong">
 											{link.title}
 										</Text>
 										<Icon size="s" name="arrowUpRight" />
 									</Flex>
-									<Text
-										variant="body-default-s" onBackground="neutral-weak">
+									<Text variant="body-default-s" onBackground="neutral-weak">
 										{link.description}
 									</Text>
 								</Flex>
 							</Link>
+						
+						</Flex>						
+
 						))}
 					</Grid>
 				</Flex>
@@ -120,19 +120,19 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Once UI, <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">MIT License</Link>
+					© 2024 Charyyev, MIT License
 				</Text>
 				<Flex
 					gap="12">
 					<Button
-						href="https://github.com/once-ui-system/nextjs-starter"
+						href="https://github.com/charyyef"
 						prefixIcon="github" size="s" variant="tertiary">
 						GitHub
 					</Button>
 					<Button
-						href="https://discord.com/invite/5EyAQ4eNdS"
-						prefixIcon="discord" size="s" variant="tertiary">
-						Discord
+						href="https://instagram.com/keremcharyyev"
+						prefixIcon="instagram" size="s" variant="tertiary">
+						Instagram
 					</Button>
 				</Flex>
 			</Flex>
