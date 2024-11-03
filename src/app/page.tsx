@@ -9,18 +9,18 @@ export default function Home() {
 	const links = [
 		{
 			href: "https://100haryt.com",
-			title: "Project",
-			description: "I'm backend developer",
+			title: "100haryt",
+			description: "Project 1",
 		},
 		{
 			href: "https://216.250.12.213",
 			title: "Bazarexpress",
-			description: "It's my project",
+			description: "Project2",
 		},
 		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
+			href: "https://etut.edu.tm",
+			title: "ETUT",
+			description: "Project 3",
 		},
 	];
 
