@@ -1,1 +1,1 @@
-Hasta la vista baby)
+Pozmaly gerek dal!
