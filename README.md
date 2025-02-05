@@ -1,1 +1,1 @@
-Pozmaly gerek dal!
+ayyramaly basga zat goymaly yerine
