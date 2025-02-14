@@ -1,0 +1,14 @@
+{
+  "name": "hh",
+  "version": "0.0.1",
+  "scripts": {
+    "migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "rollback": "knex --knexfile knexfile.ts migrate:rollback",
+    "seed": "knex --knexfile knexfile.ts seed:run",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0"
+  }
+}
